@@ -13,7 +13,8 @@ class GlobalExceptionHandler {
     public ResponseEntity<ErrorMessage> PriceException() {
         return ResponseEntity
                 .status(HttpStatus.NOT_FOUND)
-                .body(new ErrorMessage(String.valueOf(HttpStatus.NOT_FOUND.value()), "No se encontró lista de precios para la búsqueda solicitada."));
+                .body(new ErrorMessage(String.valueOf(HttpStatus.NOT_FOUND.value()), "No se encontró lista de " +
+                        "precios para la búsqueda solicitada."));
     }
 
 }

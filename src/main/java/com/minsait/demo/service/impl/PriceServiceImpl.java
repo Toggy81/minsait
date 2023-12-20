@@ -13,7 +13,8 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.Comparator;
 import java.util.List;
-import java.util.stream.Collectors;
+
+import static java.util.stream.Collectors.toList;
 
 @Service
 public class PriceServiceImpl implements PriceService {
@@ -29,7 +30,7 @@ public class PriceServiceImpl implements PriceService {
         List<Price> prices = priceRepository.getPrices(date, productId, brandId)
                 .stream()
                 .map(priceMapper::toModel)
-                .collect(Collectors.toList());
+                .collect(toList());
 
         return getThePriceWithHighestPriority(prices);
     }

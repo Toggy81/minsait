@@ -1,9 +1,7 @@
 package com.minsait.demo.mapper;
 
 import com.minsait.demo.entity.BrandEntity;
-import com.minsait.demo.entity.PriceEntity;
 import com.minsait.demo.model.Brand;
-import com.minsait.demo.model.Price;
 import org.mapstruct.Mapper;
 
 @Mapper(componentModel = "spring")
