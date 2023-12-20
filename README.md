@@ -1,4 +1,4 @@
-# Project Name: PRUEBA AVORIS
+# Project Name: PRUEBA MINSAIT
 
 ## Overview
 These are the steps to upload the application to Docker.
